@@ -1,0 +1,32 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "tahoma";
+}
+body {
+	background-color: gray;
+}
+
+#wrapper
+{
+	width: 1010px;
+	height: 650px; 
+	margin: 0px auto;
+	overflow: auto; 
+	background: linear-gradient(gray, gray, silver);	
+	padding: 20px 40px; 
+}
+
+img {
+	width: 320px;
+	height: 250px;
+	margin: 5px;    
+	overflow: auto;
+}
+p 
+{
+	color: white;
+	text-align: center;
+	margin-top: 30px; 
+}

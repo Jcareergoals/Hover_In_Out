@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Hover In/Out</title>
+	<meta name="Description" content="This page contains images that willfade in and out as the a mouse hovers over each of them.">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('img').hover(function(){
+				var backup = $(this).attr('src');
+				var altSrc = $(this).attr('altSrc');
+				$(this).attr('src', altSrc);
+				$(this).attr('altSrc', backup);
+			});
+		});  // End of jquery // 
+
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<img src="img/img_01.jpg" altSrc="img/img_11.jpg" alt="Image of 2016 Impala">
+		<img src="img/img_02.jpg" altSrc="img/img_12.jpg" alt="image of 2015 mercedes">
+		<img src="img/img_03.jpg" altSrc="img/img_13.jpg" alt="Image of 2016 Bmw">
+		<img src="img/img_04.jpg" altSrc="img/img_14.jpg" alt="Image of 2016 Maseratti">
+		<img src="img/img_05.jpg" altSrc="img/img_15.jpg" alt="Image of 2015 Mustang convertible">
+		<img src="img/img_06.jpg" altSrc="img/img_16.jpg" alt="#">
+		<p>Hover over each vehicle to view a different perspective</p>
+	</div>  <!-- End of wrapper -->
+
+</body>
+</html>
